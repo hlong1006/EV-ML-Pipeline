@@ -15,13 +15,4 @@ def extract_all_data():
         print(f"File Not Found") 
         return None , None , None
     
-if __name__ == "__main__":
-    print("Chạy extract.py trực tiếp để kiểm tra...")
-    df_ev2023, df_ev2024, df_ele = extract_all_data()
-    df = [df_ev2023 , df_ev2024 , df_ele]
-    for df in df :
-        if df is not None:
-            print("Kiểm tra df1 thành công, 5 dòng đầu:")
-            print(df.head())       
-
 

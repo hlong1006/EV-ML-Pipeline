@@ -1,0 +1,12 @@
+[
+  {
+    "Name":"Test Car 1",
+    "Range":300,
+    "Price":50000
+  },
+  {
+    "Name":"Test Car 2",
+    "Range":400,
+    "Price":60000
+  }
+]
