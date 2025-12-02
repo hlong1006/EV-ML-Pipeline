@@ -24,8 +24,15 @@ ETL-data_FlowerD1006/
 
 1. Cài đặt các thư viện cần thiết:
 ```bash
-pip install -r requirements.txt
-```
+# 1. Build Image
+docker build -t ev-etl .
+
+# 2. Run Pipeline (Kết quả sẽ lưu vào thư mục hiện tại)
+# Windows (PowerShell):
+docker run --rm -v ${PWD}:/app ev_ml_pipeline
+
+# Linux/Mac/Git Bash:
+docker run --rm -v $(pwd):/app ev_ml_pipeline
 
 ## Sử dụng
 
@@ -91,6 +98,8 @@ File `analysis.py` sẽ thực hiện:
 - Đánh giá mô hình bằng R², MAE, RMSE
 - Hiển thị feature importance
 
+**Dockerized:** Đóng gói hoàn chỉnh, chạy được trên mọi máy.
+
 ## Kết quả
 
 Sau khi chạy, các file kết quả sẽ được lưu trong thư mục `output/`:
@@ -114,7 +123,7 @@ Bạn có thể chỉnh sửa các tham số trong file `config.py`:
 
 ## Yêu cầu hệ thống
 
-- Python 3.13+
+- Python 3.10+
 - Các thư viện trong `requirements.txt`
 
 ## Tác giả
