@@ -114,10 +114,10 @@ Bạn có thể chỉnh sửa các tham số trong file `config.py`:
 
 ## Yêu cầu hệ thống
 
-- Python 3.7+
+- Python 3.13+
 - Các thư viện trong `requirements.txt`
 
 ## Tác giả
-
+Hoa Văn Long 
 Dự án ETL với Machine Learning cho dữ liệu xe điện.
 
