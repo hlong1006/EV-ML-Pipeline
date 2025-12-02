@@ -1,0 +1,34 @@
+{
+  "Drive": {
+    "classes": [
+      "All Wheel Drive",
+      "Front Wheel Drive",
+      "Rear Wheel Drive"
+    ]
+  },
+  "SpeedCategory": {
+    "classes": [
+      "Fast",
+      "Medium",
+      "Slow",
+      "Very Fast"
+    ]
+  },
+  "RangeCategory": {
+    "classes": [
+      "Long",
+      "Medium",
+      "Short",
+      "Very Long"
+    ]
+  },
+  "PriceCategory": {
+    "classes": [
+      "Budget",
+      "Luxury",
+      "Mid-range",
+      "Premium",
+      "nan"
+    ]
+  }
+}
